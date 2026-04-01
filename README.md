@@ -65,19 +65,23 @@ This project is designed for:
 
 * Sharded Checkpoints
 
-Gemma 3 models (e.g., 4B, 12B) are stored in sharded safetensors format: model.safetensors.index.json, model-00001-of-00002.safetensors, etc.
-The original Tunix implementation assumes a single model.safetensors, which leads to file-not-found errors.
+  Gemma 3 models (e.g., 4B, 12B) are stored in sharded safetensors format: 
+
+  model.safetensors.index.json
+  model-00001-of-00002.safetensors, etc.
+
+  The original Tunix implementation assumes a single model.safetensors, which leads to file-not-found errors.
 
 * Parameter Name Mismatch
 
-Tunix and Hugging Face use different parameter naming conventions:
+  Tunix and Hugging Face use different parameter naming conventions:
 
-Tunix: layers.0.attn.k_einsum
-Hugging Face: language_model.model.layers.0.self_attn.k_proj.weight
+  Tunix: layers.0.attn.k_einsum
+  Hugging Face: language_model.model.layers.0.self_attn.k_proj.weight
 
-This causes errors such as: LoRA layer not found in base model state dict
+  This causes errors such as: LoRA layer not found in base model state dict
 
-Please see my updated safetensors_saver.py at https://github.com/ayehninnkhine/tunix/blob/main/tunix/models/safetensors_saver.py . You can replace the corresponding file in your local Tunix installation if you encounter the same issue.
+* Please see my updated safetensors_saver.py at https://github.com/ayehninnkhine/tunix/blob/main/tunix/models/safetensors_saver.py . You can replace the corresponding file in your local Tunix installation if you encounter the same issue.
 
 You can find the original file in your environment at: <your_venv>/lib/python3.12/site-packages/tunix/models/safetensors_saver.py
 
