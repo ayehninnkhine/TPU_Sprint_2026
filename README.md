@@ -58,3 +58,7 @@ This project is designed for:
 * **TPU type:** v5 litepod-8
 * **Region:** e.g., `us-west4-a`
 * **Devices:** 8 TPU cores
+
+## Acknowledgement
+
+Google Cloud credits are provided for this project. #TPUSprint 
