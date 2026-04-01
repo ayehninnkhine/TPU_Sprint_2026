@@ -3,14 +3,14 @@
 
 This project demonstrates how to fine-tune **Gemma 3 (4B)** on a **Burmese agriculture dataset** using:
 
-* ⚡ **Cloud TPU (v5 litepod-8)**
-* 🧠 **Tunix (JAX-based training)**
+* **Cloud TPU (v5 litepod-8)**
+* **Tunix (JAX-based training)**
 * 🔧 **LoRA / PEFT (efficient fine-tuning)**
-* 📊 **BLEU evaluation (before vs after fine-tuning)**
+* **BLEU evaluation (before vs after fine-tuning)**
 
 The goal is to build a **domain-adapted Burmese language model** for agriculture-related Q&A and text generation.
 
-## 📚 Dataset
+## Dataset
 
 We use the Burmese agriculture dataset from Hugging Face:
 
@@ -20,7 +20,7 @@ We use the Burmese agriculture dataset from Hugging Face:
 * Domain: Agriculture
 * Format: Instruction-style / QA-like
 
-### 📖 Dataset Citation
+### Dataset Citation
 
 If you use this dataset, please cite:
 
@@ -33,7 +33,7 @@ If you use this dataset, please cite:
 }
 ```
 
-## 🚀 Features
+## Features
 
 * TPU-based large model fine-tuning (Gemma 3)
 * Efficient training using LoRA (low memory)
@@ -43,7 +43,7 @@ If you use this dataset, please cite:
 * Support for **sharded checkpoints (Gemma 3 HF models)**
 
 
-## 🧠 Model
+## Model
 
 * **Base Model:** `google/gemma-3-4b-it`
 * Architecture: Transformer (decoder-only LLM)
@@ -51,7 +51,7 @@ If you use this dataset, please cite:
 
 
 
-## 🖥️ TPU Setup (v5 litepod-8)
+## TPU Setup (v5 litepod-8)
 
 This project is designed for:
 
