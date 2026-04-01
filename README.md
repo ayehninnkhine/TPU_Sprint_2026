@@ -26,7 +26,7 @@ If you use this dataset, please cite:
 
 ```bibtex
 @dataset{ankanage_burmese_agriculture,
-  author = {AnkaNge},
+  author = {Yi Yi Chan Myae Win Shein},
   title = {Burmese Agriculture Dataset},
   year = {2024},
   url = {https://huggingface.co/datasets/AnkaNge/burmese_agriculture}
